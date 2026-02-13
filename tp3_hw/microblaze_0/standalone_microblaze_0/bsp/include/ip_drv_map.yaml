@@ -1,0 +1,12 @@
+microblaze_0_axi_intc:
+- axi_intc
+- intc
+microblaze_0_local_memory_dlmb_bram_if_cntlr:
+- lmb_bram_if_cntlr
+- bram
+my_led_0:
+- my_led
+- None
+sw:
+- axi_gpio
+- gpio

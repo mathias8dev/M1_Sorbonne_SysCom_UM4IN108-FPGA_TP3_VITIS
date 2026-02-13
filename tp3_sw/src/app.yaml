@@ -1,0 +1,4 @@
+domain_path: /home/mathias8dev/VitisProjects/tp3_workspace/tp3_hw/export/tp3_hw/sw/standalone_microblaze_0
+app_src_dir: /home/mathias8dev/vivado/2025.2/Vitis/data/embeddedsw/lib/sw_apps/empty_application
+template: empty_application
+lang: c
