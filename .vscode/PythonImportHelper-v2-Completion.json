@@ -13,7 +13,7 @@
         "kind": 5,
         "importPath": "_ide.workspace_journal",
         "description": "_ide.workspace_journal",
-        "peekOfCode": "client = vitis.create_client()\nclient.set_workspace(path=\"tp3_workspace\")\nplatform = client.create_platform_component(name = \"tp3_hw\",hw_design = \"$COMPONENT_LOCATION/../../../VivadoProjects/M1_Sorbonne_SysCom_UM4IN108-FPGA_TP3/project/TP3_wrapper.xsa\",os = \"standalone\",cpu = \"microblaze_0\",domain_name = \"standalone_microblaze_0\",compiler = \"gcc\")\ncomp = client.create_app_component(name=\"tp3_sw\",platform = \"$COMPONENT_LOCATION/../tp3_hw/export/tp3_hw/tp3_hw.xpfm\",domain = \"standalone_microblaze_0\")",
+        "peekOfCode": "client = vitis.create_client()\nclient.set_workspace(path=\"tp3_workspace\")\nplatform = client.get_component(name=\"tp3_hw\")\nstatus = platform.build()\ncomp = client.get_component(name=\"tp3_sw\")\ncomp.build()\nstatus = platform.build()\nstatus = platform.build()\ncomp.build()\nstatus = platform.build()",
         "detail": "_ide.workspace_journal",
         "documentation": {}
     },
@@ -22,7 +22,16 @@
         "kind": 5,
         "importPath": "_ide.workspace_journal",
         "description": "_ide.workspace_journal",
-        "peekOfCode": "platform = client.create_platform_component(name = \"tp3_hw\",hw_design = \"$COMPONENT_LOCATION/../../../VivadoProjects/M1_Sorbonne_SysCom_UM4IN108-FPGA_TP3/project/TP3_wrapper.xsa\",os = \"standalone\",cpu = \"microblaze_0\",domain_name = \"standalone_microblaze_0\",compiler = \"gcc\")\ncomp = client.create_app_component(name=\"tp3_sw\",platform = \"$COMPONENT_LOCATION/../tp3_hw/export/tp3_hw/tp3_hw.xpfm\",domain = \"standalone_microblaze_0\")",
+        "peekOfCode": "platform = client.get_component(name=\"tp3_hw\")\nstatus = platform.build()\ncomp = client.get_component(name=\"tp3_sw\")\ncomp.build()\nstatus = platform.build()\nstatus = platform.build()\ncomp.build()\nstatus = platform.build()\ncomp.build()",
+        "detail": "_ide.workspace_journal",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "kind": 5,
+        "importPath": "_ide.workspace_journal",
+        "description": "_ide.workspace_journal",
+        "peekOfCode": "status = platform.build()\ncomp = client.get_component(name=\"tp3_sw\")\ncomp.build()\nstatus = platform.build()\nstatus = platform.build()\ncomp.build()\nstatus = platform.build()\ncomp.build()",
         "detail": "_ide.workspace_journal",
         "documentation": {}
     },
@@ -31,8 +40,161 @@
         "kind": 5,
         "importPath": "_ide.workspace_journal",
         "description": "_ide.workspace_journal",
-        "peekOfCode": "comp = client.create_app_component(name=\"tp3_sw\",platform = \"$COMPONENT_LOCATION/../tp3_hw/export/tp3_hw/tp3_hw.xpfm\",domain = \"standalone_microblaze_0\")",
+        "peekOfCode": "comp = client.get_component(name=\"tp3_sw\")\ncomp.build()\nstatus = platform.build()\nstatus = platform.build()\ncomp.build()\nstatus = platform.build()\ncomp.build()",
         "detail": "_ide.workspace_journal",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "kind": 5,
+        "importPath": "_ide.workspace_journal",
+        "description": "_ide.workspace_journal",
+        "peekOfCode": "status = platform.build()\nstatus = platform.build()\ncomp.build()\nstatus = platform.build()\ncomp.build()",
+        "detail": "_ide.workspace_journal",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "kind": 5,
+        "importPath": "_ide.workspace_journal",
+        "description": "_ide.workspace_journal",
+        "peekOfCode": "status = platform.build()\ncomp.build()\nstatus = platform.build()\ncomp.build()",
+        "detail": "_ide.workspace_journal",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "kind": 5,
+        "importPath": "_ide.workspace_journal",
+        "description": "_ide.workspace_journal",
+        "peekOfCode": "status = platform.build()\ncomp.build()",
+        "detail": "_ide.workspace_journal",
+        "documentation": {}
+    },
+    {
+        "label": "client",
+        "kind": 5,
+        "importPath": "_ide.workspace_journal_171883",
+        "description": "_ide.workspace_journal_171883",
+        "peekOfCode": "client = vitis.create_client()\nclient.set_workspace(path=\"tp3_workspace\")\nplatform = client.create_platform_component(name = \"tp3_hw\",hw_design = \"$COMPONENT_LOCATION/../../../VivadoProjects/M1_Sorbonne_SysCom_UM4IN108-FPGA_TP3/project/TP3_wrapper.xsa\",os = \"standalone\",cpu = \"microblaze_0\",domain_name = \"standalone_microblaze_0\",compiler = \"gcc\")\ncomp = client.create_app_component(name=\"tp3_sw\",platform = \"$COMPONENT_LOCATION/../tp3_hw/export/tp3_hw/tp3_hw.xpfm\",domain = \"standalone_microblaze_0\")\nplatform = client.get_component(name=\"tp3_hw\")\nstatus = platform.build()\nstatus = platform.build()\ncomp = client.get_component(name=\"tp3_sw\")\ncomp.build()\nstatus = platform.build()",
+        "detail": "_ide.workspace_journal_171883",
+        "documentation": {}
+    },
+    {
+        "label": "platform",
+        "kind": 5,
+        "importPath": "_ide.workspace_journal_171883",
+        "description": "_ide.workspace_journal_171883",
+        "peekOfCode": "platform = client.create_platform_component(name = \"tp3_hw\",hw_design = \"$COMPONENT_LOCATION/../../../VivadoProjects/M1_Sorbonne_SysCom_UM4IN108-FPGA_TP3/project/TP3_wrapper.xsa\",os = \"standalone\",cpu = \"microblaze_0\",domain_name = \"standalone_microblaze_0\",compiler = \"gcc\")\ncomp = client.create_app_component(name=\"tp3_sw\",platform = \"$COMPONENT_LOCATION/../tp3_hw/export/tp3_hw/tp3_hw.xpfm\",domain = \"standalone_microblaze_0\")\nplatform = client.get_component(name=\"tp3_hw\")\nstatus = platform.build()\nstatus = platform.build()\ncomp = client.get_component(name=\"tp3_sw\")\ncomp.build()\nstatus = platform.build()\nstatus = comp.clean()\nstatus = platform.build()",
+        "detail": "_ide.workspace_journal_171883",
+        "documentation": {}
+    },
+    {
+        "label": "comp",
+        "kind": 5,
+        "importPath": "_ide.workspace_journal_171883",
+        "description": "_ide.workspace_journal_171883",
+        "peekOfCode": "comp = client.create_app_component(name=\"tp3_sw\",platform = \"$COMPONENT_LOCATION/../tp3_hw/export/tp3_hw/tp3_hw.xpfm\",domain = \"standalone_microblaze_0\")\nplatform = client.get_component(name=\"tp3_hw\")\nstatus = platform.build()\nstatus = platform.build()\ncomp = client.get_component(name=\"tp3_sw\")\ncomp.build()\nstatus = platform.build()\nstatus = comp.clean()\nstatus = platform.build()\ncomp.build()",
+        "detail": "_ide.workspace_journal_171883",
+        "documentation": {}
+    },
+    {
+        "label": "platform",
+        "kind": 5,
+        "importPath": "_ide.workspace_journal_171883",
+        "description": "_ide.workspace_journal_171883",
+        "peekOfCode": "platform = client.get_component(name=\"tp3_hw\")\nstatus = platform.build()\nstatus = platform.build()\ncomp = client.get_component(name=\"tp3_sw\")\ncomp.build()\nstatus = platform.build()\nstatus = comp.clean()\nstatus = platform.build()\ncomp.build()\nstatus = comp.clean()",
+        "detail": "_ide.workspace_journal_171883",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "kind": 5,
+        "importPath": "_ide.workspace_journal_171883",
+        "description": "_ide.workspace_journal_171883",
+        "peekOfCode": "status = platform.build()\nstatus = platform.build()\ncomp = client.get_component(name=\"tp3_sw\")\ncomp.build()\nstatus = platform.build()\nstatus = comp.clean()\nstatus = platform.build()\ncomp.build()\nstatus = comp.clean()\nstatus = platform.build()",
+        "detail": "_ide.workspace_journal_171883",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "kind": 5,
+        "importPath": "_ide.workspace_journal_171883",
+        "description": "_ide.workspace_journal_171883",
+        "peekOfCode": "status = platform.build()\ncomp = client.get_component(name=\"tp3_sw\")\ncomp.build()\nstatus = platform.build()\nstatus = comp.clean()\nstatus = platform.build()\ncomp.build()\nstatus = comp.clean()\nstatus = platform.build()\ncomp.build()",
+        "detail": "_ide.workspace_journal_171883",
+        "documentation": {}
+    },
+    {
+        "label": "comp",
+        "kind": 5,
+        "importPath": "_ide.workspace_journal_171883",
+        "description": "_ide.workspace_journal_171883",
+        "peekOfCode": "comp = client.get_component(name=\"tp3_sw\")\ncomp.build()\nstatus = platform.build()\nstatus = comp.clean()\nstatus = platform.build()\ncomp.build()\nstatus = comp.clean()\nstatus = platform.build()\ncomp.build()\nstatus = comp.import_files(from_loc=\"$COMPONENT_LOCATION/../../../VivadoProjects/M1_Sorbonne_SysCom_UM4IN108-FPGA_TP3/ip_repo/my_led_1_0/drivers/my_led_v1_0/src\", files=[\"my_led.c\", \"my_led.h\"], dest_dir_in_cmp = \"src\", is_skip_copy_sources = False)",
+        "detail": "_ide.workspace_journal_171883",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "kind": 5,
+        "importPath": "_ide.workspace_journal_171883",
+        "description": "_ide.workspace_journal_171883",
+        "peekOfCode": "status = platform.build()\nstatus = comp.clean()\nstatus = platform.build()\ncomp.build()\nstatus = comp.clean()\nstatus = platform.build()\ncomp.build()\nstatus = comp.import_files(from_loc=\"$COMPONENT_LOCATION/../../../VivadoProjects/M1_Sorbonne_SysCom_UM4IN108-FPGA_TP3/ip_repo/my_led_1_0/drivers/my_led_v1_0/src\", files=[\"my_led.c\", \"my_led.h\"], dest_dir_in_cmp = \"src\", is_skip_copy_sources = False)\nstatus = platform.build()\ncomp.build()",
+        "detail": "_ide.workspace_journal_171883",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "kind": 5,
+        "importPath": "_ide.workspace_journal_171883",
+        "description": "_ide.workspace_journal_171883",
+        "peekOfCode": "status = comp.clean()\nstatus = platform.build()\ncomp.build()\nstatus = comp.clean()\nstatus = platform.build()\ncomp.build()\nstatus = comp.import_files(from_loc=\"$COMPONENT_LOCATION/../../../VivadoProjects/M1_Sorbonne_SysCom_UM4IN108-FPGA_TP3/ip_repo/my_led_1_0/drivers/my_led_v1_0/src\", files=[\"my_led.c\", \"my_led.h\"], dest_dir_in_cmp = \"src\", is_skip_copy_sources = False)\nstatus = platform.build()\ncomp.build()\nvitis.dispose()",
+        "detail": "_ide.workspace_journal_171883",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "kind": 5,
+        "importPath": "_ide.workspace_journal_171883",
+        "description": "_ide.workspace_journal_171883",
+        "peekOfCode": "status = platform.build()\ncomp.build()\nstatus = comp.clean()\nstatus = platform.build()\ncomp.build()\nstatus = comp.import_files(from_loc=\"$COMPONENT_LOCATION/../../../VivadoProjects/M1_Sorbonne_SysCom_UM4IN108-FPGA_TP3/ip_repo/my_led_1_0/drivers/my_led_v1_0/src\", files=[\"my_led.c\", \"my_led.h\"], dest_dir_in_cmp = \"src\", is_skip_copy_sources = False)\nstatus = platform.build()\ncomp.build()\nvitis.dispose()",
+        "detail": "_ide.workspace_journal_171883",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "kind": 5,
+        "importPath": "_ide.workspace_journal_171883",
+        "description": "_ide.workspace_journal_171883",
+        "peekOfCode": "status = comp.clean()\nstatus = platform.build()\ncomp.build()\nstatus = comp.import_files(from_loc=\"$COMPONENT_LOCATION/../../../VivadoProjects/M1_Sorbonne_SysCom_UM4IN108-FPGA_TP3/ip_repo/my_led_1_0/drivers/my_led_v1_0/src\", files=[\"my_led.c\", \"my_led.h\"], dest_dir_in_cmp = \"src\", is_skip_copy_sources = False)\nstatus = platform.build()\ncomp.build()\nvitis.dispose()",
+        "detail": "_ide.workspace_journal_171883",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "kind": 5,
+        "importPath": "_ide.workspace_journal_171883",
+        "description": "_ide.workspace_journal_171883",
+        "peekOfCode": "status = platform.build()\ncomp.build()\nstatus = comp.import_files(from_loc=\"$COMPONENT_LOCATION/../../../VivadoProjects/M1_Sorbonne_SysCom_UM4IN108-FPGA_TP3/ip_repo/my_led_1_0/drivers/my_led_v1_0/src\", files=[\"my_led.c\", \"my_led.h\"], dest_dir_in_cmp = \"src\", is_skip_copy_sources = False)\nstatus = platform.build()\ncomp.build()\nvitis.dispose()",
+        "detail": "_ide.workspace_journal_171883",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "kind": 5,
+        "importPath": "_ide.workspace_journal_171883",
+        "description": "_ide.workspace_journal_171883",
+        "peekOfCode": "status = comp.import_files(from_loc=\"$COMPONENT_LOCATION/../../../VivadoProjects/M1_Sorbonne_SysCom_UM4IN108-FPGA_TP3/ip_repo/my_led_1_0/drivers/my_led_v1_0/src\", files=[\"my_led.c\", \"my_led.h\"], dest_dir_in_cmp = \"src\", is_skip_copy_sources = False)\nstatus = platform.build()\ncomp.build()\nvitis.dispose()",
+        "detail": "_ide.workspace_journal_171883",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "kind": 5,
+        "importPath": "_ide.workspace_journal_171883",
+        "description": "_ide.workspace_journal_171883",
+        "peekOfCode": "status = platform.build()\ncomp.build()\nvitis.dispose()",
+        "detail": "_ide.workspace_journal_171883",
         "documentation": {}
     }
 ]

@@ -1,7 +1,7 @@
 sdt: hw_artifacts/microblaze_0_baremetal.dts
 family: artix7
 path: /home/mathias8dev/VitisProjects/tp3_workspace/tp3_hw/microblaze_0/standalone_microblaze_0/bsp
-config: default
+config: None
 os: standalone
 os_info:
   standalone:

@@ -1,10 +1,22 @@
-# 2026-02-13T15:41:19.062998168
+# 2026-02-13T16:05:40.453552593
 import vitis
 
 client = vitis.create_client()
 client.set_workspace(path="tp3_workspace")
 
-platform = client.create_platform_component(name = "tp3_hw",hw_design = "$COMPONENT_LOCATION/../../../VivadoProjects/M1_Sorbonne_SysCom_UM4IN108-FPGA_TP3/project/TP3_wrapper.xsa",os = "standalone",cpu = "microblaze_0",domain_name = "standalone_microblaze_0",compiler = "gcc")
+platform = client.get_component(name="tp3_hw")
+status = platform.build()
 
-comp = client.create_app_component(name="tp3_sw",platform = "$COMPONENT_LOCATION/../tp3_hw/export/tp3_hw/tp3_hw.xpfm",domain = "standalone_microblaze_0")
+comp = client.get_component(name="tp3_sw")
+comp.build()
+
+status = platform.build()
+
+status = platform.build()
+
+comp.build()
+
+status = platform.build()
+
+comp.build()
 
